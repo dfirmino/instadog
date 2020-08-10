@@ -13,7 +13,7 @@ yarn install
 yarn start
 ```
 
-## Páginas
+## Pré-Visualização
 #### Login
 
 ![Login](https://i.ibb.co/2YtBpfq/Screenshot-2020-08-09-Login-Dogs-1.jpg)
