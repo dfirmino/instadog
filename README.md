@@ -1,4 +1,4 @@
-# Descrição
+## Descrição
 
 InstaDog é uma rede social inspirada no instagram para cachorros.
 
@@ -14,14 +14,14 @@ yarn start
 ```
 
 ## Páginas
-Login
+#### Login
 
 ![Login](https://i.ibb.co/2YtBpfq/Screenshot-2020-08-09-Login-Dogs-1.jpg)
 
-Home
+#### Home
 
 ![Home](https://i.ibb.co/dJbmqXx/Screenshot-2020-08-09-Fotos-Dogs-1.jpg)
 
-Foto
+#### Foto
 
 ![Home](https://i.ibb.co/qkRTZ1Z/Screenshot-2020-08-09-Fotos-Dogs.jpg)
