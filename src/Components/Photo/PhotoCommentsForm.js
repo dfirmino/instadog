@@ -6,7 +6,7 @@ import Error from '../Helper/Error'
 import styles from './PhotoCommentsForm.module.css'
 
 const PhotoCommentsForm = ({id, setComments}) => {
-    const [comment, setComment] = useState(null)
+    const [comment, setComment] = useState('')
     const { error, request } = useFetch()
     
     const handleSubmit = async (event) => {
