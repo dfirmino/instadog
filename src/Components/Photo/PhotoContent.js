@@ -6,11 +6,11 @@ import Image from '../Helper/Image'
 import { UserContext } from '../../UserContext'
 import PhotoDelete from './PhotoDelete'
 
-const PhotoContent = ({data}) => {
+const PhotoContent = ({data, single}) => {
     const {photo, comments} = data
     const user = React.useContext(UserContext)
     return (
-        <div className={styles.photo}>
+        <div className={`${styles.photo} ${single ? styles.single : null}`}>
             <div className={styles.img}>
                 <Image src={photo.src} alt={photo.title} />
             </div>
@@ -22,14 +22,14 @@ const PhotoContent = ({data}) => {
                     :<Link to={`/perfil/${photo.author}`}>@{photo.author}</Link> }
                     <span className={styles.visualizacoes}>{photo.acessos}</span>
                     </p>
-                    <h1 className='title'><Link to={`/photo/${photo.id}`}>{photo.title}</Link></h1>
+                    <h1 className='title'><Link to={`/foto/${photo.id}`}>{photo.title}</Link></h1>
                     <ul className={styles.attributes}>
                         <li>{photo.peso} kg</li>
                         <li>{photo.idade} ano(s)</li>
                     </ul>
                 </div>
             </div>
-                <PhotoComments id={photo.id} comments={comments} />
+                <PhotoComments id={photo.id} single={single} comments={comments} />
         </div>
     )
 }
