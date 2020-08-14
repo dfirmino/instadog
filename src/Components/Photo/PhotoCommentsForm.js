@@ -24,9 +24,9 @@ const PhotoCommentsForm = ({id, setComments}) => {
     }
     
     return (
-        <form onSubmit={handleSubmit}>
-            <textarea  value={comment} onChange={handleChange} id='comment' name='comment' placeholder='Comente...'/>
-            <button> <Enviar /> </button>
+        <form className={styles.form} onSubmit={handleSubmit}>
+            <textarea className={styles.textarea} value={comment} onChange={handleChange} id='comment' name='comment' placeholder='Comente...'/>
+            <button className={styles.button} > <Enviar /> </button>
             {error && <Error error={error} /> }
         </form>
     )
