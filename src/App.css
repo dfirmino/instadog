@@ -87,6 +87,10 @@ button,input {
     animation: animeLeft .3s forwards;
 }
 
+.VictoryContainer {
+    height: initial !important;
+}   
+
 @keyframes animeLeft {
     to {
         opacity: 1;
